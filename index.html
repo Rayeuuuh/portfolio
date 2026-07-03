@@ -4,63 +4,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ton Nom — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
-  <p class="eyebrow">Étudiant en Licence Informatique</p>
+  <div class="terminal">
+    <p class="prompt-line"><span class="prompt">$</span> <span id="typed"></span><span class="cursor">▌</span></p>
+  </div>
   <h1>Ton Nom</h1>
-  <p class="tagline">Je code des jeux, des outils, et j'apprends en construisant.</p>
-  <a href="#projets" class="btn">Voir mes projets</a>
+  <p class="tagline">Étudiant en Licence Informatique — je construis des jeux, des outils, et j'apprends en faisant.</p>
 </header>
+
+<nav class="menu" aria-label="Filtrer par catégorie">
+  <button class="menu-item is-active" data-filter="tous"><span class="idx">00</span> Tous</button>
+  <button class="menu-item" data-filter="programmation"><span class="idx">01</span> Programmation</button>
+  <button class="menu-item" data-filter="jeux"><span class="idx">02</span> Jeux vidéo</button>
+  <button class="menu-item" data-filter="graphisme"><span class="idx">03</span> Graphisme</button>
+  <button class="menu-item" data-filter="audiovisuel"><span class="idx">04</span> Audiovisuel</button>
+</nav>
 
 <main>
   <section id="projets">
-    <h2>Projets</h2>
+    <p class="breadcrumb">&gt; <span id="current-filter">tous</span>/</p>
+
     <div class="grid">
 
-      <article class="card">
+      <article class="card" data-category="jeux programmation">
         <div class="card-media">
-          <!-- Remplace par une image ou un GIF de gameplay -->
-          <span class="placeholder">Image / GIF</span>
+          <span class="placeholder">Image / GIF / asciinema</span>
         </div>
-        <h3>Nom du projet</h3>
+        <h3>Nom du jeu</h3>
         <p class="meta">Java · Console</p>
-        <p>Courte description : ce que fait le projet, ce que t'as appris ou résolu de sympa.</p>
+        <p>Courte description du projet, ce que t'as appris ou résolu de sympa.</p>
         <div class="links">
           <a href="#">GitHub</a>
           <a href="#">Télécharger</a>
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-category="jeux programmation">
         <div class="card-media">
-          <span class="placeholder">Image / GIF</span>
+          <span class="placeholder">Image / GIF / asciinema</span>
         </div>
-        <h3>Nom du projet</h3>
+        <h3>Nom du jeu</h3>
         <p class="meta">C · Console</p>
-        <p>Courte description : ce que fait le projet, ce que t'as appris ou résolu de sympa.</p>
+        <p>Courte description du projet, ce que t'as appris ou résolu de sympa.</p>
         <div class="links">
           <a href="#">GitHub</a>
           <a href="#">Télécharger</a>
         </div>
       </article>
 
-      <article class="card">
+      <article class="card" data-category="graphisme">
         <div class="card-media">
-          <span class="placeholder">Image / GIF</span>
+          <span class="placeholder">Image</span>
         </div>
-        <h3>Nom du projet</h3>
-        <p class="meta">Techno · Type</p>
-        <p>Courte description : ce que fait le projet, ce que t'as appris ou résolu de sympa.</p>
+        <h3>Nom du projet graphisme</h3>
+        <p class="meta">Illustration · Design</p>
+        <p>Courte description du projet.</p>
         <div class="links">
-          <a href="#">GitHub</a>
-          <a href="#">Télécharger</a>
+          <a href="#">Voir</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="audiovisuel">
+        <div class="card-media">
+          <span class="placeholder">Vidéo</span>
+        </div>
+        <h3>Nom du projet vidéo</h3>
+        <p class="meta">Montage · Motion design</p>
+        <p>Courte description du projet.</p>
+        <div class="links">
+          <a href="#">Voir</a>
         </div>
       </article>
 
     </div>
+
+    <p class="empty-state" id="empty-state" hidden>Rien ici pour l'instant — reviens bientôt.</p>
   </section>
 
   <section id="contact">
@@ -74,5 +99,6 @@
   <p>© 2026 Ton Nom</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

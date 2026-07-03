@@ -1,6 +1,6 @@
 // --- Effet machine à écrire dans le hero ---
 const typedEl = document.getElementById('typed');
-const phrase = "whoami";
+const phrase = "Portfolio";
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (typedEl) {

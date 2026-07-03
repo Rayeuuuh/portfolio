@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nom du jeu — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<!-- asciinema : décommente ces 2 lignes quand tu auras un enregistrement -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.css"> -->
+</head>
+<body>
+
+<nav class="project-nav">
+  <a href="../index.html" class="back-link">← Retour aux projets</a>
+</nav>
+
+<article class="project">
+
+  <header class="project-header">
+    <p class="meta">C · Console</p>
+    <h1>Nom du jeu</h1>
+    <p class="project-intro">
+      Résumé du projet en une ou deux phrases.
+    </p>
+    <div class="project-links">
+      <a href="#" class="btn">Télécharger</a>
+      <a href="#" class="btn btn-ghost">Code source</a>
+    </div>
+  </header>
+
+  <section class="project-block">
+    <h2>Démo (terminal)</h2>
+    <p>Enregistrement de la session avec asciinema — léger et net, mieux qu'une vidéo pour du terminal.</p>
+    <div class="media-hero">
+      <!-- Quand tu auras un fichier .cast :
+      1. décommente le <link> asciinema dans le <head>
+      2. remplace ce placeholder par :
+      <div id="asciinema"></div>
+      3. décommente le <script> en bas de page
+      -->
+      <span class="placeholder">Enregistrement asciinema ici</span>
+    </div>
+  </section>
+
+  <section class="project-block">
+    <h2>À propos</h2>
+    <p>Description détaillée du projet.</p>
+  </section>
+
+  <section class="project-block">
+    <h2>Détails techniques</h2>
+    <dl class="specs">
+      <div><dt>Langage</dt><dd>C (C99)</dd></div>
+      <div><dt>Type</dt><dd>Application console</dd></div>
+      <div><dt>Concepts</dt><dd>Pointeurs, gestion mémoire, structures</dd></div>
+      <div><dt>Compilation</dt><dd>gcc / make</dd></div>
+    </dl>
+  </section>
+
+  <section class="project-block">
+    <h2>Compiler et lancer</h2>
+    <pre class="code"><code>gcc -o jeu main.c
+./jeu</code></pre>
+  </section>
+
+</article>
+
+<footer>
+  <p><a href="../index.html">← Retour au portfolio</a></p>
+</footer>
+
+<!-- asciinema player (décommente quand prêt) :
+<script src="https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.min.js"></script>
+<script>
+  AsciinemaPlayer.create('../medias/jeu-c.cast', document.getElementById('asciinema'), { autoPlay: true, loop: true });
+</script>
+-->
+
+</body>
+</html>

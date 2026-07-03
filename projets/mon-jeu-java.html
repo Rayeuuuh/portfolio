@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nom du jeu — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- ===== BARRE DE RETOUR ===== -->
+<nav class="project-nav">
+  <a href="../index.html" class="back-link">← Retour aux projets</a>
+</nav>
+
+<article class="project">
+
+  <!-- ===== EN-TÊTE DU PROJET ===== -->
+  <header class="project-header">
+    <p class="meta">Java · Console</p>
+    <h1>Nom du jeu</h1>
+    <p class="project-intro">
+      Une phrase ou deux qui résument le projet : ce que c'est, ce qui le rend
+      intéressant. Ex : « Un jeu de rôle jouable au clavier dans le terminal,
+      avec système de combat au tour par tour et sauvegarde de partie. »
+    </p>
+    <div class="project-links">
+      <a href="#" class="btn">Télécharger (.jar)</a>
+      <a href="#" class="btn btn-ghost">Code source</a>
+    </div>
+  </header>
+
+  <!-- ===== MÉDIA PRINCIPAL (vidéo / asciinema / GIF) ===== -->
+  <section class="project-block">
+    <h2>Aperçu</h2>
+    <div class="media-hero">
+      <!-- OPTION A : une vidéo hébergée (YouTube/Vimeo) -->
+      <!-- <iframe src="https://www.youtube.com/embed/TON_ID" allowfullscreen></iframe> -->
+
+      <!-- OPTION B : un GIF ou une image -->
+      <!-- <img src="../medias/jeu-java-demo.gif" alt="Démo du jeu"> -->
+
+      <!-- OPTION C : asciinema (voir la version console dédiée) -->
+
+      <span class="placeholder">Vidéo / GIF de gameplay ici</span>
+    </div>
+  </section>
+
+  <!-- ===== DESCRIPTION ===== -->
+  <section class="project-block">
+    <h2>À propos</h2>
+    <p>
+      Décris ici le projet plus en détail : le concept, comment on y joue, ce que
+      tu voulais accomplir. Tu peux parler du contexte (projet perso, projet de
+      cours, jeu de game jam...).
+    </p>
+    <p>
+      Deuxième paragraphe si besoin : les défis que t'as rencontrés, ce que
+      t'as appris, ce dont tu es fier dans ce projet.
+    </p>
+  </section>
+
+  <!-- ===== GALERIE D'IMAGES ===== -->
+  <section class="project-block">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <div class="gallery-item"><span class="placeholder">Image 1</span></div>
+      <div class="gallery-item"><span class="placeholder">Image 2</span></div>
+      <div class="gallery-item"><span class="placeholder">Image 3</span></div>
+      <!-- Modèle réel :
+      <div class="gallery-item"><img src="../medias/jeu-java-1.png" alt="Écran de menu"></div>
+      -->
+    </div>
+  </section>
+
+  <!-- ===== EXTRAIT DE CODE ===== -->
+  <section class="project-block">
+    <h2>Un bout de code que j'aime bien</h2>
+    <p>Explique en une phrase pourquoi ce morceau est intéressant (un algo, une astuce, ton moteur de jeu...).</p>
+    <pre class="code"><code>// Exemple : boucle principale du jeu
+while (partieEnCours) {
+    afficherEtat(joueur, ennemi);
+    Action action = lireAction(scanner);
+    resoudre(action);
+    if (ennemi.pv &lt;= 0) partieEnCours = false;
+}</code></pre>
+  </section>
+
+  <!-- ===== SPECS TECHNIQUES ===== -->
+  <section class="project-block">
+    <h2>Détails techniques</h2>
+    <dl class="specs">
+      <div><dt>Langage</dt><dd>Java 17</dd></div>
+      <div><dt>Type</dt><dd>Application console</dd></div>
+      <div><dt>Concepts</dt><dd>POO, structures de données, gestion d'état</dd></div>
+      <div><dt>Durée</dt><dd>~3 semaines</dd></div>
+    </dl>
+  </section>
+
+  <!-- ===== COMMENT L'EXÉCUTER ===== -->
+  <section class="project-block">
+    <h2>Lancer le jeu</h2>
+    <pre class="code"><code>javac Main.java
+java Main</code></pre>
+  </section>
+
+</article>
+
+<footer>
+  <p><a href="../index.html">← Retour au portfolio</a></p>
+</footer>
+
+</body>
+</html>
